@@ -1,0 +1,9 @@
+$(function() {
+  $("#tags").autocomplete({
+  
+    var keys = Object.keys(parse_file());
+    javascript = "var availableTags = " + JSON.stringify(keys) + ";";
+  
+    source: availableTags
+  });
+};
