@@ -1,9 +1,8 @@
 $(function() {
-  $("#tags").autocomplete({
-  
-    var keys = Object.keys(parse_file());
-    javascript = "var availableTags = " + JSON.stringify(keys) + ";";
-  
+    
+    var availableTags = <%- JSON.stringify(keys) %>;
+
+    $( "#tags" ).autocomplete({
     source: availableTags
   });
-};
+});

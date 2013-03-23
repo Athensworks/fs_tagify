@@ -22,13 +22,9 @@ app.get('/example.json', function(req, res){
   res.end(body);
 });
 
-// app.get('/tags.js', function(req, res){
-//   res.setHeader('Content-Type', 'text/javascript');
-//   res.setHeader('Content-Length', javascript.length);
-//   res.end(javascript);
-// })
-
-app.get('/', function(req, res) {
+app.get('/tags.js', function(req, res) {
+  keys = Object.keys(parse_file());
+  console.log(keys);
   res.render('tags.ejs');
 });
 
