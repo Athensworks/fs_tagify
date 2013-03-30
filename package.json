@@ -1,6 +1,6 @@
 {
-  "name": "tagify-search",
-  "description": "search tool for tagification app",
+  "name": "fs_tagify",
+  "description": "Node.js app to allow tagification of files on any OS",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
